@@ -1,5 +1,5 @@
 SOURCES += \
-    addition_matrix.cpp \
+    addition_matrix.s \
     diagonal_matrix.cpp \
     init_alloc_matrix.cpp \
     main.cpp \
