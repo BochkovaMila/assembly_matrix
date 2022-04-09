@@ -1,18 +1,25 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-#include"addition_matrix.h"
-#include"diagonal_matrix.h"
-#include"init_alloc_matrix.h"
-#include"multiply_alloc_matrix.h"
-#include"print_matrix.h"
+#include "addition_matrix.h"
+#include "diagonal_matrix.h"
+#include "init_alloc_matrix.h"
+#include "multiply_alloc_matrix.h"
+#include "print_matrix.h"
+#include "multiply_by_constant.h"
 
 int main() {
+
     double *a = init_alloc_matrix(3);
 
     double *b = init_alloc_matrix(3);
 
     printf("matrix a:\n");
+    print_matrix(a, 3);
+
+    multiply_by_constant(a, 3, 5);
+
+    printf("a*5=:\n");
     print_matrix(a, 3);
 
     printf("matrix b:\n");

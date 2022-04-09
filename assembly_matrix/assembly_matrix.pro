@@ -1,11 +1,11 @@
 SOURCES += \
     main.cpp \
-    multiply_alloc_matrix.cpp \
+    multiply_alloc_matrix.s \
     addition_matrix.s \
     diagonal_matrix.s \
     init_alloc_matrix.s \
     multiply_by_constant.s \
-    print_matrix.cpp
+    print_matrix.s
 
 
 HEADERS += \
@@ -15,3 +15,8 @@ HEADERS += \
     multiply_alloc_matrix.h \
     multiply_by_constant.h \
     print_matrix.h
+
+DISTFILES += \
+    multiply_alloc_matrix.s
+
+
